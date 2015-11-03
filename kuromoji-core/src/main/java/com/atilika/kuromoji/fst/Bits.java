@@ -16,7 +16,9 @@
  */
 package com.atilika.kuromoji.fst;
 
-public class Bits {
+import java.io.Serializable;
+
+public class Bits implements Serializable {
 
     public static byte getByte(byte[] array, int index) {
         return array[index];

@@ -16,13 +16,15 @@
  */
 package com.atilika.kuromoji.buffer;
 
+import java.io.Serializable;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class FeatureInfoMap {
+public class FeatureInfoMap implements Serializable {
 
     private Map<String, Integer> featureMap = new HashMap<>();
 

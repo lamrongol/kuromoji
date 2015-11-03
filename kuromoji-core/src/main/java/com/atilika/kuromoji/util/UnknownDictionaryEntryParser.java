@@ -16,13 +16,15 @@
  */
 package com.atilika.kuromoji.util;
 
+import java.io.Serializable;
+
 import com.atilika.kuromoji.dict.GenericDictionaryEntry;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class UnknownDictionaryEntryParser extends DictionaryEntryLineParser {
+public class UnknownDictionaryEntryParser extends DictionaryEntryLineParser implements Serializable {
 
     // NOTE: Currently this code is the same as the IPADIC dictionary entry parser,
     // which is okay for all the dictionaries supported so far...

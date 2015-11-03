@@ -16,6 +16,8 @@
  */
 package com.atilika.kuromoji.viterbi;
 
+import java.io.Serializable;
+
 import com.atilika.kuromoji.TokenizerBase;
 import com.atilika.kuromoji.dict.ConnectionCosts;
 import com.atilika.kuromoji.dict.UnknownDictionary;
@@ -23,7 +25,7 @@ import com.atilika.kuromoji.dict.UnknownDictionary;
 import java.util.LinkedList;
 import java.util.List;
 
-public class ViterbiSearcher {
+public class ViterbiSearcher implements Serializable {
 
     private static final int DEFAULT_COST = Integer.MAX_VALUE;
 

@@ -16,13 +16,15 @@
  */
 package com.atilika.kuromoji.fst;
 
+import java.io.Serializable;
+
 import java.io.ByteArrayOutputStream;
 import java.io.DataOutput;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.util.List;
 
-public class Compiler {
+public class Compiler implements Serializable {
 
     /**
      * 1 byte   node type: 0x01 = accept, 0x02 = match

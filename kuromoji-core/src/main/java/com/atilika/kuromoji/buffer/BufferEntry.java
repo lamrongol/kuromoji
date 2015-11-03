@@ -16,10 +16,12 @@
  */
 package com.atilika.kuromoji.buffer;
 
+import java.io.Serializable;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class BufferEntry {
+public class BufferEntry implements Serializable {
 
     public List<Short> tokenInfo = new ArrayList<>();
     public List<Integer> features = new ArrayList<>();

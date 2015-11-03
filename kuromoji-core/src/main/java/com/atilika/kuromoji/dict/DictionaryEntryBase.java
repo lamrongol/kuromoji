@@ -16,7 +16,9 @@
  */
 package com.atilika.kuromoji.dict;
 
-public abstract class DictionaryEntryBase {
+import java.io.Serializable;
+
+public abstract class DictionaryEntryBase implements Serializable {
 
     protected final String surface;
     protected final short leftId;

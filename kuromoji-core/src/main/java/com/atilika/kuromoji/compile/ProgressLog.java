@@ -16,6 +16,8 @@
  */
 package com.atilika.kuromoji.compile;
 
+import java.io.Serializable;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -25,7 +27,7 @@ import java.util.Map;
 /**
  * Simple progress logger
  */
-public class ProgressLog {
+public class ProgressLog implements Serializable {
     private static int indent = 0;
     private static boolean atEOL = false;
     private static DateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");

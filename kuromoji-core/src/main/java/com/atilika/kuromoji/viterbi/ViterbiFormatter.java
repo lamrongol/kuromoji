@@ -16,13 +16,15 @@
  */
 package com.atilika.kuromoji.viterbi;
 
+import java.io.Serializable;
+
 import com.atilika.kuromoji.dict.ConnectionCosts;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ViterbiFormatter {
+public class ViterbiFormatter implements Serializable {
 
     private final static String BOS_LABEL = "BOS";
     private final static String EOS_LABEL = "EOS";

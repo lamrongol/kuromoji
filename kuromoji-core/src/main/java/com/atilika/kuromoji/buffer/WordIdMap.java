@@ -16,13 +16,15 @@
  */
 package com.atilika.kuromoji.buffer;
 
+import java.io.Serializable;
+
 import com.atilika.kuromoji.io.IntegerArrayIO;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Arrays;
 
-public class WordIdMap {
+public class WordIdMap implements Serializable {
 
     private final int[] indices;
 

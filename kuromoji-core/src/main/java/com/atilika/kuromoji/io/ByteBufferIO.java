@@ -16,6 +16,8 @@
  */
 package com.atilika.kuromoji.io;
 
+import java.io.Serializable;
+
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.DataInputStream;
@@ -28,7 +30,7 @@ import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
 import java.nio.channels.WritableByteChannel;
 
-public class ByteBufferIO {
+public class ByteBufferIO implements Serializable {
 
     public static ByteBuffer read(InputStream input) throws IOException {
         DataInputStream dataInput = new DataInputStream(

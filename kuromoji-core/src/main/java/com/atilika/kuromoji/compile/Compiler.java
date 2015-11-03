@@ -16,9 +16,11 @@
  */
 package com.atilika.kuromoji.compile;
 
+import java.io.Serializable;
+
 import java.io.IOException;
 
-public interface Compiler {
+public interface Compiler extends Serializable {
 
     void compile() throws IOException;
 }

@@ -16,7 +16,9 @@
  */
 package com.atilika.kuromoji.viterbi;
 
-public class ViterbiLattice {
+import java.io.Serializable;
+
+public class ViterbiLattice implements Serializable {
 
     private static final String BOS = "BOS";
     private static final String EOS = "EOS";

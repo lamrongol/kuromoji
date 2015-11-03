@@ -16,6 +16,8 @@
  */
 package com.atilika.kuromoji.fst;
 
+import java.io.Serializable;
+
 import java.io.IOException;
 import java.io.LineNumberReader;
 import java.io.Reader;
@@ -25,7 +27,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-public class Builder {
+public class Builder implements Serializable {
     // Note that FST only allows the presorted dictionaries as input.
     private Map<Integer, List<State>> statesDictionary;
 

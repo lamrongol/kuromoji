@@ -6,7 +6,7 @@
  * License is distributed with this work in the LICENSE.md file.  You may
  * also obtain a copy of the License from
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -16,10 +16,12 @@
  */
 package com.atilika.kuromoji.viterbi;
 
+import java.io.Serializable;
+
 import com.atilika.kuromoji.TokenBase;
 import com.atilika.kuromoji.dict.Dictionary;
 
-public interface TokenFactory<T extends TokenBase> {
+public interface TokenFactory<T extends TokenBase> extends Serializable {
 
     T createToken(int wordId,
                   String surface,

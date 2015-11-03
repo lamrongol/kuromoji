@@ -16,6 +16,8 @@
  */
 package com.atilika.kuromoji.compile;
 
+import java.io.Serializable;
+
 import com.atilika.kuromoji.dict.CharacterDefinitions;
 import com.atilika.kuromoji.dict.ConnectionCosts;
 import com.atilika.kuromoji.dict.UnknownDictionary;
@@ -29,7 +31,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 
-public abstract class DictionaryCompilerBase {
+public abstract class DictionaryCompilerBase implements Serializable {
 
     public void build(String inputDirname, String outputDirname, String encoding) throws IOException {
         File outputDir = new File(outputDirname);

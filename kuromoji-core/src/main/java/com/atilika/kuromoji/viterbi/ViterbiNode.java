@@ -16,9 +16,11 @@
  */
 package com.atilika.kuromoji.viterbi;
 
+import java.io.Serializable;
+
 import com.atilika.kuromoji.dict.Dictionary;
 
-public class ViterbiNode {
+public class ViterbiNode implements Serializable {
 
     public enum Type {
         KNOWN,

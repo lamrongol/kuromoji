@@ -16,11 +16,13 @@
  */
 package com.atilika.kuromoji.fst;
 
+import java.io.Serializable;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class FSTFormatter {
+public class FSTFormatter implements Serializable {
 
     private final static String FONT_NAME = "Helvetica";
 

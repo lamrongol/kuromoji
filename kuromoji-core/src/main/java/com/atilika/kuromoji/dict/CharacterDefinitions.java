@@ -16,6 +16,8 @@
  */
 package com.atilika.kuromoji.dict;
 
+import java.io.Serializable;
+
 import com.atilika.kuromoji.util.ResourceResolver;
 import com.atilika.kuromoji.io.IntegerArrayIO;
 import com.atilika.kuromoji.io.StringArrayIO;
@@ -23,7 +25,7 @@ import com.atilika.kuromoji.io.StringArrayIO;
 import java.io.IOException;
 import java.io.InputStream;
 
-public final class CharacterDefinitions {
+public final class CharacterDefinitions implements Serializable {
 
     public static final String CHARACTER_DEFINITIONS_FILENAME = "characterDefinitions.bin";
 

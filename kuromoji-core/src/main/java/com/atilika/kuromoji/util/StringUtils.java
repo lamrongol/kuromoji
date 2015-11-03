@@ -16,7 +16,9 @@
  */
 package com.atilika.kuromoji.util;
 
-public class StringUtils {
+import java.io.Serializable;
+
+public class StringUtils implements Serializable {
 
     public static String join(String[] values, String separator) {
         StringBuilder builder = new StringBuilder();

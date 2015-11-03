@@ -16,10 +16,12 @@
  */
 package com.atilika.kuromoji.util;
 
+import java.io.Serializable;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class DictionaryEntryLineParser {
+public class DictionaryEntryLineParser implements Serializable {
 
     private static final char QUOTE = '"';
     private static final char COMMA = ',';

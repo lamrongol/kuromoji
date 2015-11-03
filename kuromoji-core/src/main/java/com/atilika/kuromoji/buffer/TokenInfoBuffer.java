@@ -16,13 +16,15 @@
  */
 package com.atilika.kuromoji.buffer;
 
+import java.io.Serializable;
+
 import com.atilika.kuromoji.io.ByteBufferIO;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 
-public class TokenInfoBuffer {
+public class TokenInfoBuffer implements Serializable {
 
     private static final int INTEGER_BYTES = Integer.SIZE / Byte.SIZE;
     private static final int SHORT_BYTES = Short.SIZE / Byte.SIZE;

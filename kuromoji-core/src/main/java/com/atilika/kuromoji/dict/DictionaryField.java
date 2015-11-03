@@ -16,7 +16,9 @@
  */
 package com.atilika.kuromoji.dict;
 
-public class DictionaryField {
+import java.io.Serializable;
+
+public class DictionaryField implements Serializable {
 
     public static final int SURFACE = 0;
     public static final int LEFT_ID = 1;

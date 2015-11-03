@@ -16,12 +16,14 @@
  */
 package com.atilika.kuromoji.fst;
 
+import java.io.Serializable;
+
 import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class BitsFormatter {
+public class BitsFormatter implements Serializable {
 
     private ByteArrayOutputStream byteOutput = new ByteArrayOutputStream();
 

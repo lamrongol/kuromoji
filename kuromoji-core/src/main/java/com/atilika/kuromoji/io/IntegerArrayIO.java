@@ -16,6 +16,8 @@
  */
 package com.atilika.kuromoji.io;
 
+import java.io.Serializable;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -27,7 +29,7 @@ import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
 import java.nio.channels.WritableByteChannel;
 
-public class IntegerArrayIO {
+public class IntegerArrayIO implements Serializable {
 
     private static final int INT_BYTES = Integer.SIZE / Byte.SIZE;
 

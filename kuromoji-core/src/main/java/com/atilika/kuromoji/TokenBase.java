@@ -16,13 +16,15 @@
  */
 package com.atilika.kuromoji;
 
+import java.io.Serializable;
+
 import com.atilika.kuromoji.dict.Dictionary;
 import com.atilika.kuromoji.viterbi.ViterbiNode.Type;
 
 /**
  * Abstract token class with features shared by all tokens produced by all tokenizers
  */
-public abstract class TokenBase {
+public abstract class TokenBase implements Serializable {
 
     private static final int META_DATA_SIZE = 4;
 

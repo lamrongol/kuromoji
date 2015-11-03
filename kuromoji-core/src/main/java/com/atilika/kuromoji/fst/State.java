@@ -16,11 +16,13 @@
  */
 package com.atilika.kuromoji.fst;
 
+import java.io.Serializable;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class State {
+public class State implements Serializable {
     List<Arc> arcs;
     private boolean isFinal = false;
     boolean visited; //for visualization purpose

@@ -16,6 +16,8 @@
  */
 package com.atilika.kuromoji.fst;
 
+import java.io.Serializable;
+
 import com.atilika.kuromoji.io.ByteBufferIO;
 import com.atilika.kuromoji.util.ResourceResolver;
 
@@ -23,7 +25,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Arrays;
 
-public class FST {
+public class FST implements Serializable {
 
     public static final String FST_FILENAME = "fst.bin";
 

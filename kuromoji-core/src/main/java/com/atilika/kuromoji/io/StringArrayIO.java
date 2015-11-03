@@ -16,13 +16,15 @@
  */
 package com.atilika.kuromoji.io;
 
+import java.io.Serializable;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public class StringArrayIO {
+public class StringArrayIO implements Serializable {
 
     public static String[] readArray(InputStream input) throws IOException {
         DataInputStream dataInput = new DataInputStream(input);

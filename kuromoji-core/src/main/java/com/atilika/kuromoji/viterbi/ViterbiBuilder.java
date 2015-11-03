@@ -16,6 +16,8 @@
  */
 package com.atilika.kuromoji.viterbi;
 
+import java.io.Serializable;
+
 import com.atilika.kuromoji.TokenizerBase.Mode;
 import com.atilika.kuromoji.dict.CharacterDefinitions;
 import com.atilika.kuromoji.dict.TokenInfoDictionary;
@@ -26,7 +28,7 @@ import com.atilika.kuromoji.fst.FST;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ViterbiBuilder {
+public class ViterbiBuilder implements Serializable {
 
     private final FST fst;
     private final TokenInfoDictionary dictionary;

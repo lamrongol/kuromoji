@@ -16,6 +16,8 @@
  */
 package com.atilika.kuromoji.trie;
 
+import java.io.Serializable;
+
 import com.atilika.kuromoji.trie.PatriciaTrie.KeyMapper;
 
 import java.io.File;
@@ -30,7 +32,7 @@ import java.io.PrintWriter;
  *
  * See @see <a href="http://graphviz.org/">Graphviz</a>
  */
-public class PatriciaTrieFormatter<V> {
+public class PatriciaTrieFormatter<V> implements Serializable {
 
     private final static String FONT_NAME = "Helvetica";
 

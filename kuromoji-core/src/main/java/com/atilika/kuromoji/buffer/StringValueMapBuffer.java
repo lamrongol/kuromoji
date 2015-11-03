@@ -16,6 +16,8 @@
  */
 package com.atilika.kuromoji.buffer;
 
+import java.io.Serializable;
+
 import com.atilika.kuromoji.io.ByteBufferIO;
 
 import java.io.IOException;
@@ -25,7 +27,7 @@ import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 import java.util.TreeMap;
 
-public class StringValueMapBuffer {
+public class StringValueMapBuffer implements Serializable {
 
     private static final int INTEGER_BYTES = Integer.SIZE / Byte.SIZE;
 

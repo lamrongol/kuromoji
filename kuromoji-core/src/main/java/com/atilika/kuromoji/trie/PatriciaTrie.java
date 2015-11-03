@@ -16,6 +16,8 @@
  */
 package com.atilika.kuromoji.trie;
 
+import java.io.Serializable;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -35,7 +37,7 @@ import java.util.Set;
  *
  * @param <V> value type
  */
-public class PatriciaTrie<V> implements Map<String, V> {
+public class PatriciaTrie<V> implements Serializable, Map<String, V> {
 
     /** Root value is left -- right is unused */
     protected PatriciaNode<V> root;

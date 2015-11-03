@@ -16,7 +16,9 @@
  */
 package com.atilika.kuromoji.dict;
 
-public interface Dictionary {
+import java.io.Serializable;
+
+public interface Dictionary extends Serializable {
 
     /**
      * Gets the left id of the specified word

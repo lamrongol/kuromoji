@@ -16,7 +16,9 @@
  */
 package com.atilika.kuromoji.fst;
 
-public class Arc {
+import java.io.Serializable;
+
+public class Arc implements Serializable {
     char label;
     int output = 0;
     State destination;

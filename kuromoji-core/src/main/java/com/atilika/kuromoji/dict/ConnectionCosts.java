@@ -16,6 +16,8 @@
  */
 package com.atilika.kuromoji.dict;
 
+import java.io.Serializable;
+
 import com.atilika.kuromoji.util.ResourceResolver;
 import com.atilika.kuromoji.io.ByteBufferIO;
 
@@ -26,7 +28,7 @@ import java.io.InputStream;
 import java.nio.ByteBuffer;
 import java.nio.ShortBuffer;
 
-public class ConnectionCosts {
+public class ConnectionCosts implements Serializable {
 
     public static final String CONNECTION_COSTS_FILENAME = "connectionCosts.bin";
 
